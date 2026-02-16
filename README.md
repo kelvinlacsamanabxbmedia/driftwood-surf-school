@@ -1,6 +1,19 @@
 # Driftwood Surf School
 
-A website for Driftwood Surf School built with [Payload CMS 3.0](https://payloadcms.com/) and [Next.js 15](https://nextjs.org/).
+A website for **Driftwood Surf School** built with [Payload CMS 3.0](https://payloadcms.com/) and [Next.js 15](https://nextjs.org/).
+
+## About
+
+Driftwood Surf School has been the premier surf destination on the coast since 1998. What started as a single van and a quiver of longboards has grown into a full-service surf school founded by local legends who grew up on the very breaks they teach on.
+
+The site serves as the school's online presence, allowing visitors to:
+
+- **Browse surf lessons** — Group lessons ($75), private 1-on-1 coaching ($120), and week-long surf camps ($550)
+- **Check live surf conditions** — Real-time swell, water temperature, wind, and UV data with tide schedules
+- **Meet the crew** — Profiles of the instructor team (Kai, Sarah, Mike, Jessica)
+- **Book sessions online** — Integrated booking form with lesson selection
+- **Learn the story** — The school's history and surf philosophy
+- **Get answers** — FAQ covering gear, weather, age requirements, and cancellation policy
 
 ## Tech Stack
 
