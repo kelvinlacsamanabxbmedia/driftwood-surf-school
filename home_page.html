@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wavecrest - Driftwood Surf School</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                        "sand": "#fdfbf7",
+                        "sand-dark": "#1e293b",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"],
+                        "handwritten": ["Caveat", "cursive"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>html {
+    scroll-behavior: smooth
+    }.no-scrollbar::-webkit-scrollbar {
+    display: none
+    }
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none
+    }.grain-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuAdJ4PJisDsWTlAjldKiVDQ64a_sG7Iu7zmcb_86yQeWDAEWceZTjQlQu6P2DA8nIJH795iBRgcW-OR3jNkJTC3WAIv5VbCbXfa5GlZCFdBSe3anvqY3B4fzBusk0HDaHbL6Ua-uFBaOjg6jOnocrl9l0hYDttJViECYPdeOYs-UohpYBoXVk0VGV915efOKAdhPnGgJubAn2syXfgG1nzOrH0gLJt9oGdsNHdlyZBHd1VzsafV7tdTeoK7yzT8RDTj5vmeqW_X4uo);
+    opacity: 0.4;
+    z-index: 10
+    }</style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-white antialiased selection:bg-primary/30">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="w-full bg-white/80 dark:bg-background-dark/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-200 dark:border-slate-800">
+<div class="px-4 md:px-10 py-3 flex items-center justify-between max-w-7xl mx-auto w-full">
+<div class="flex items-center gap-2 text-slate-900 dark:text-white group cursor-pointer">
+<span class="material-symbols-outlined text-primary text-3xl">surfing</span>
+<h2 class="text-xl font-extrabold tracking-tight">Wavecrest</h2>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<nav class="flex gap-6">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#lessons">Lessons</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#conditions">Conditions</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#instructors">Instructors</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#faq">FAQ</a>
+</nav>
+<a class="bg-primary hover:bg-blue-600 text-white text-sm font-bold px-5 py-2.5 rounded-full transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5" href="#booking">
+                        Book Session
+                    </a>
+</div>
+<button class="md:hidden text-slate-900 dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+<main class="flex flex-col items-center w-full">
+<div class="w-full max-w-7xl px-4 md:px-10 py-6 md:py-10 flex flex-col gap-12 md:gap-20">
+<section class="relative w-full rounded-2xl md:rounded-3xl overflow-hidden min-h-[500px] flex items-center justify-center group grain-overlay">
+<div class="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-700 group-hover:scale-105" data-alt="Surfer riding a large wave with sun flare" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCPlhamYNcLoblbh5qG2uu2OLr7qFOciiTuoupgDABkYj4cVPUj1ow_jIqoO_K4AGL8zmM4JAlz0iaQ88PIJj0TdUG6bmMlFo5i7Jc9R48WNSHHNgpW2MBEcfom1v6bBwyiU1Ee8bfbnbWju7FrLg_jhc238LwUDTTUYdPG_c4oUkTVSpdVT22Mcf2K64QQJVog300kmsnnB3TS4dhaJGNsKK81GGlmE3cTaTg-p5Dt9Grxl3YuCLv8MDlOQGEf4UxCfL20qUDbJUA');">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/30"></div>
+<div class="relative z-20 flex flex-col items-center text-center max-w-2xl px-6 gap-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white text-xs font-bold uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+                            Surf Conditions: Good
+                        </div>
+<h1 class="text-4xl md:text-6xl font-black text-white leading-[1.1] tracking-tight drop-shadow-sm">
+                            Ride the Tide at <span class="text-primary italic">Driftwood</span>
+</h1>
+<p class="text-lg md:text-xl text-slate-100 font-medium max-w-lg leading-relaxed drop-shadow-sm">
+                            Experience the best waves with professional coaching. From first timers to seasoned pros, your wave is waiting.
+                        </p>
+<a class="mt-4 bg-primary hover:bg-blue-600 text-white text-base md:text-lg font-bold px-8 py-4 rounded-full transition-all shadow-xl hover:shadow-2xl hover:scale-105 flex items-center gap-2" href="#booking">
+<span>Book Your Session</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</section>
+<section class="relative w-full overflow-hidden bg-sand dark:bg-sand-dark rounded-3xl border border-slate-100 dark:border-slate-800">
+<div class="grid grid-cols-1 lg:grid-cols-2">
+<div class="relative h-[400px] lg:h-auto min-h-[400px]">
+<div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC9xaPTQFk3CrzkGXp7Nz3xLTmYYa8-xaDk9vc5JL0Tx-GJNC124zfnaaCBQ_wxndAT4_3JX_nEJOfXQMfzoAXCSe2SE-GoBJuslrmFS3-qjUY8Llev4wLpXO9JwFgj0H5vLSCj9IajJ9mN0XuVqTnuX9Y-Ot4g_xx9i7Un3V3kVjEqCy-ROIiLausRRURFvtV9dvsiLM9rIBbVwa-AbFzZ1Auzd5S7i2bomrpcN_97d5mWaToZVYfdqZ2KFQ6o_YvkTgtO5qeHVD4'); filter: sepia(0.1) contrast(1.05);"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-transparent to-sand/20 dark:to-sand-dark/20"></div>
+</div>
+<div class="p-8 md:p-12 lg:p-16 flex flex-col justify-center gap-6">
+<div class="flex flex-col gap-2">
+<span class="text-primary font-bold uppercase tracking-widest text-xs">Since 1998</span>
+<h2 class="text-5xl md:text-6xl font-handwritten text-slate-900 dark:text-white mb-2">Our Story</h2>
+<div class="w-16 h-1 bg-primary/20 rounded-full overflow-hidden relative">
+<div class="absolute top-0 left-0 w-8 h-full bg-primary rounded-full"></div>
+</div>
+</div>
+<div class="prose prose-slate dark:prose-invert">
+<p class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+                    What started as a single van and a quiver of longboards has grown into the premier surf destination on the coast. At Driftwood, we believe surfing is more than just a sport—it's a way to connect with nature and yourself.
+                </p>
+<p class="text-slate-600 dark:text-slate-300 mt-4">
+                    Founded by local legends who grew up on these very breaks, we've taught thousands of people to stand up on their first wave. Our philosophy remains simple: respect the ocean, have fun, and share the stoke.
+                </p>
+</div>
+<div class="flex items-center gap-4 mt-4">
+<div class="flex -space-x-3">
+<img alt="Team member" class="w-10 h-10 rounded-full border-2 border-white dark:border-slate-800 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvZbARYBSIsk_0I6ne83TjwK-RkHApsv__s9dSE0yDLVsqxtABZz151nHmITUJC0RpfC1Uiwc6MG2l89lf0ybQGaYHqtxRkTn8wk3njrIAh5POh2tEsBZsGhKETN0qVpIVwnoY9c6t5xHSFctLYIw7Q9--0Vqt56yqLXE55_PzH_HduOIGSlsKizlxjub4qBgF7LSZk6rOaLke4pjeAnVZofm2hCAUoyFdCH9iiZxgn6TgUi39w9iPC0Crr_inGQxVea1x7U-tbjE"/>
+<img alt="Team member" class="w-10 h-10 rounded-full border-2 border-white dark:border-slate-800 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC07a2vVfgWRkjOB1ztrG2wNmgavXWCkXoDhhqxT6AA6SHC4oF34QPM-7BCtKbF08KGXPnxHHS8vKQjDG4wRCX-GlmJbtb_R3z4orUDViVuZX5JlZRbVBb1xUzmD5_0uComB4ToEJgSlohWdMYHA3qRKgF_-AWvbzPE0Oo1C5FXo8F-rJ7pvIDYymfVJfvmKB7oK3-MFmLLD1eXehuBrkwALKMhc1_shv1-8W7fnFMGgOMk_YvDnFk5wZXMntxU5ymwoc0PsSGia9Q"/>
+<img alt="Team member" class="w-10 h-10 rounded-full border-2 border-white dark:border-slate-800 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAZkZUcjqTqG2_54JuKHHehCCVJtkckkejYFSTUOHw2cbGO3RVCYyfYI90hF2UDXbbXmrVetHDObWD68LS9L1R2MKUqucjIIHzBRnTnLiB8eoEc7dgN8fymG2qbjPih_0CW27c2ud-zu0Heg8Hm6g4BTFdJu_ghlDd3u3WrpciNF5oxM62vlxq8RipbA2Wj91mVmgN0SHWli-urv4o7wRL0KgspwRAfL4KqtHk5GARrRy7jDgb2QbxMi7SAEFbeY2tXTPKJN44FBg"/>
+</div>
+<span class="text-sm font-bold text-slate-500">Meet the locals</span>
+</div>
+<div class="absolute bottom-8 right-8 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-9xl text-slate-900 dark:text-white rotate-12">tsunami</span>
+</div>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-8" id="lessons">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<h2 class="text-3xl font-bold text-slate-900 dark:text-white">Choose Your Lesson</h2>
+<p class="text-slate-500 dark:text-slate-400 mt-2">Professional coaching for every skill level.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="flex flex-col gap-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 shadow-sm hover:shadow-md transition-shadow">
+<div class="h-40 rounded-xl bg-cover bg-center mb-2 relative overflow-hidden" data-alt="Group of friends carrying surfboards on the beach" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA_UbRgHpaIni03GGIOATcO1iPHuHQ1R-KLgtzqKtHuQJZHekF0lNiyCfZDjeCp4DBpZhjZ70ZcQr-krIsA0AhwUK37u2XUzR1oZlzfc4O-V9emjXjEJ4nbVo5zVd0rRBs1JCxwsr_OWw31_udsLN7MBtzeRDk49WQ7o9SG5PbuPSAZLDZYbyCLMby8D8_WIlIxrWSytdLaAQylyPOJwW-5h-nsjgzz73icXwcLBRxXXW-HEIAs89NCQqVm_pnCuRVO8GaQSW-OARw');">
+<div class="absolute top-3 right-3 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">Best Value</div>
+</div>
+<div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white">Group Lesson</h3>
+<p class="flex items-baseline gap-1 mt-2">
+<span class="text-3xl font-black text-slate-900 dark:text-white">$75</span>
+<span class="text-sm font-medium text-slate-500">/ session</span>
+</p>
+</div>
+<ul class="flex flex-col gap-3 text-sm text-slate-600 dark:text-slate-300">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>Fun with friends</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>Includes board rental</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>90 minutes</li>
+</ul>
+<button class="mt-auto w-full bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-900 dark:text-white font-bold py-3 rounded-xl transition-colors">Select</button>
+</div>
+<div class="flex flex-col gap-4 rounded-2xl border-2 border-primary bg-white dark:bg-slate-900 p-6 shadow-md relative">
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Recommended</div>
+<div class="h-40 rounded-xl bg-cover bg-center mb-2" data-alt="Instructor pointing at waves with student" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDWjSWO_vnXreknYLZIBnao6dbD2OW-FZce10JK7U8ypgcXJ4TkpMXcTE1-Na2vx5wHuUQLLvHInsedwFTRA8rQ3-_yRA7fQ4zYwsv32vnRAxVop8fV-UTiKWCOBAe17Q_-KuATuX97-imHfnIK-MiCZobo1d6ot5yvWdWBd5W8_MRzr5WVjBQchd6Ii0zIU0_-oNkehD2Z9WreJ6SGplQkP87ITbYpRvKYCWK1Ic_wS6Qn2pdfBUTDu3pVb1emfRvOu9oNkVkyKAk');">
+</div>
+<div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white">Private Lesson</h3>
+<p class="flex items-baseline gap-1 mt-2">
+<span class="text-3xl font-black text-slate-900 dark:text-white">$120</span>
+<span class="text-sm font-medium text-slate-500">/ session</span>
+</p>
+</div>
+<ul class="flex flex-col gap-3 text-sm text-slate-600 dark:text-slate-300">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>1-on-1 coaching</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>Video analysis</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>Flexible scheduling</li>
+</ul>
+<button class="mt-auto w-full bg-primary hover:bg-blue-600 text-white font-bold py-3 rounded-xl transition-colors shadow-lg shadow-primary/20">Select</button>
+</div>
+<div class="flex flex-col gap-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 shadow-sm hover:shadow-md transition-shadow">
+<div class="h-40 rounded-xl bg-cover bg-center mb-2" data-alt="Surfboards lined up against a palm tree sunset" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDW5up6GjmUTcmxFsKpVqOXECVPHZaT8kiOlu1qsMFdfw7T9YoFj43_Lxw1neqcODPL9CAn2dpgEuDFRA-1pQh3vAhiIrKZPjpHq6PtTLifTJhQOWkzZqza64417ThL7UkYgLUyeO6scrc5SDXZBN40WMu0eDSui4gWhTwrhIbzAB4ngotulYacScVlj7hb4VIQaJXHmdePoShjo0jxqPdd1NYODaAWLK-GajHI8BkUQV6QL8xn4RvvO1qH3RiYChax7kT1OF1tzZY');">
+</div>
+<div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white">Surf Camp</h3>
+<p class="flex items-baseline gap-1 mt-2">
+<span class="text-3xl font-black text-slate-900 dark:text-white">$550</span>
+<span class="text-sm font-medium text-slate-500">/ week</span>
+</p>
+</div>
+<ul class="flex flex-col gap-3 text-sm text-slate-600 dark:text-slate-300">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>5-day intensive</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>Accommodation included</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>Daily video review</li>
+</ul>
+<button class="mt-auto w-full bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-900 dark:text-white font-bold py-3 rounded-xl transition-colors">Select</button>
+</div>
+</div>
+</section>
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-6" id="conditions">
+<div class="lg:col-span-5 bg-white dark:bg-slate-900 rounded-2xl p-6 md:p-8 shadow-sm border border-slate-200 dark:border-slate-800 flex flex-col gap-6">
+<div class="flex items-center justify-between">
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white">Live Conditions</h2>
+<div class="flex bg-slate-100 dark:bg-slate-800 rounded-lg p-1">
+<button class="px-3 py-1 rounded-md text-xs font-bold bg-white dark:bg-slate-700 shadow-sm text-primary">AM</button>
+<button class="px-3 py-1 rounded-md text-xs font-medium text-slate-500 hover:text-slate-900 dark:hover:text-white">Mid</button>
+<button class="px-3 py-1 rounded-md text-xs font-medium text-slate-500 hover:text-slate-900 dark:hover:text-white">PM</button>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-blue-50 dark:bg-slate-800 rounded-xl p-4 flex flex-col gap-1">
+<div class="flex items-center gap-2 text-blue-600 dark:text-blue-400 mb-1">
+<span class="material-symbols-outlined">tsunami</span>
+<span class="text-xs font-bold uppercase">Swell</span>
+</div>
+<span class="text-3xl font-black text-slate-900 dark:text-white">3-4<span class="text-lg text-slate-500 ml-1">ft</span></span>
+<span class="text-xs text-slate-500">Clean conditions</span>
+</div>
+<div class="bg-orange-50 dark:bg-slate-800 rounded-xl p-4 flex flex-col gap-1">
+<div class="flex items-center gap-2 text-orange-600 dark:text-orange-400 mb-1">
+<span class="material-symbols-outlined">device_thermostat</span>
+<span class="text-xs font-bold uppercase">Water</span>
+</div>
+<span class="text-3xl font-black text-slate-900 dark:text-white">68<span class="text-lg text-slate-500 ml-1">°F</span></span>
+<span class="text-xs text-slate-500">3/2 wetsuit req.</span>
+</div>
+<div class="bg-slate-50 dark:bg-slate-800 rounded-xl p-4 flex flex-col gap-1">
+<div class="flex items-center gap-2 text-slate-600 dark:text-slate-400 mb-1">
+<span class="material-symbols-outlined">air</span>
+<span class="text-xs font-bold uppercase">Wind</span>
+</div>
+<span class="text-3xl font-black text-slate-900 dark:text-white">8<span class="text-lg text-slate-500 ml-1">mph</span></span>
+<span class="text-xs text-slate-500">Offshore NW</span>
+</div>
+<div class="bg-yellow-50 dark:bg-slate-800 rounded-xl p-4 flex flex-col gap-1">
+<div class="flex items-center gap-2 text-yellow-600 dark:text-yellow-400 mb-1">
+<span class="material-symbols-outlined">light_mode</span>
+<span class="text-xs font-bold uppercase">UV Index</span>
+</div>
+<span class="text-3xl font-black text-slate-900 dark:text-white">High</span>
+<span class="text-xs text-slate-500">Sunscreen essential</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 bg-white dark:bg-slate-900 rounded-2xl p-6 md:p-8 shadow-sm border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
+<div class="flex items-center justify-between mb-6">
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white">Tide Chart</h2>
+<span class="text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">Optimal: 7am - 10am</span>
+</div>
+<div class="relative w-full h-48 bg-slate-50 dark:bg-slate-800/50 rounded-xl overflow-hidden border border-slate-100 dark:border-slate-700">
+<div class="absolute inset-0 flex flex-col justify-between py-4 px-6 opacity-20">
+<div class="w-full h-px bg-slate-400 border-dashed border-t"></div>
+<div class="w-full h-px bg-slate-400 border-dashed border-t"></div>
+<div class="w-full h-px bg-slate-400 border-dashed border-t"></div>
+</div>
+<div class="absolute left-[20%] w-[25%] h-full bg-primary/10 border-x border-primary/20 flex items-start justify-center pt-2">
+<span class="text-[10px] font-bold text-primary uppercase tracking-wide">Best</span>
+</div>
+<svg class="absolute bottom-0 left-0 w-full h-full text-primary" preserveAspectRatio="none" viewBox="0 0 100 50">
+<path d="M0,50 L0,30 C20,10 40,50 60,30 C80,10 100,40 100,40 L100,50 Z" fill="url(#grad1)" stroke="currentColor" stroke-width="0.5"></path>
+<defs>
+<linearGradient id="grad1" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" style="stop-color:#137fec;stop-opacity:0.4"></stop>
+<stop offset="100%" style="stop-color:#137fec;stop-opacity:0"></stop>
+</linearGradient>
+</defs>
+</svg>
+<div class="absolute bottom-0 w-full flex justify-between px-4 pb-2 text-[10px] text-slate-500 font-medium">
+<span>6 AM</span>
+<span>9 AM</span>
+<span>12 PM</span>
+<span>3 PM</span>
+<span>6 PM</span>
+</div>
+</div>
+<div class="flex justify-between mt-6 text-sm">
+<div class="flex flex-col">
+<span class="text-slate-500">Low Tide</span>
+<span class="font-bold text-slate-900 dark:text-white">8:15 AM <span class="text-slate-400 font-normal">0.4ft</span></span>
+</div>
+<div class="flex flex-col text-right">
+<span class="text-slate-500">High Tide</span>
+<span class="font-bold text-slate-900 dark:text-white">2:45 PM <span class="text-slate-400 font-normal">4.8ft</span></span>
+</div>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-8" id="instructors">
+<h2 class="text-3xl font-bold text-slate-900 dark:text-white">Meet the Crew</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="group flex flex-col items-center text-center p-6 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-primary/50 transition-colors">
+<div class="w-24 h-24 rounded-full bg-slate-200 mb-4 overflow-hidden border-2 border-transparent group-hover:border-primary transition-all">
+<img alt="Instructor Kai smiling holding a surfboard" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvZbARYBSIsk_0I6ne83TjwK-RkHApsv__s9dSE0yDLVsqxtABZz151nHmITUJC0RpfC1Uiwc6MG2l89lf0ybQGaYHqtxRkTn8wk3njrIAh5POh2tEsBZsGhKETN0qVpIVwnoY9c6t5xHSFctLYIw7Q9--0Vqt56yqLXE55_PzH_HduOIGSlsKizlxjub4qBgF7LSZk6rOaLke4pjeAnVZofm2hCAUoyFdCH9iiZxgn6TgUi39w9iPC0Crr_inGQxVea1x7U-tbjE"/>
+</div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">Kai</h3>
+<p class="text-primary text-sm font-semibold mb-2">12 Years Surfing</p>
+<p class="text-slate-500 text-sm italic">"I make the best tacos on the beach."</p>
+</div>
+<div class="group flex flex-col items-center text-center p-6 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-primary/50 transition-colors">
+<div class="w-24 h-24 rounded-full bg-slate-200 mb-4 overflow-hidden border-2 border-transparent group-hover:border-primary transition-all">
+<img alt="Instructor Sarah smiling in wetsuit" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCGGi2z59XmoDerLq0tiMzBZKOmI5aYVZHfMdunfUEhQdEw0dhPupwhBliLucnJTV3waREDKJ9uq51KOVRgDRAdPQ7rT4qcpHLqpMDDdvfXW3pjmcf4zjUpjiqKk2fUtunyq_MAybFmvTA12Cz2aaguvwhNjJyYldkkvmKXD6akWCwGA4LxWt-739QamXkk8k6YYlpuJfWY7rshqAA8JUWg0fmq9HxTAfkSDTvDNXf18Es0A2NVoCnoz0NuM-2uaVG3MeY0JVhaxQ"/>
+</div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">Sarah</h3>
+<p class="text-primary text-sm font-semibold mb-2">8 Years Surfing</p>
+<p class="text-slate-500 text-sm italic">"Former pro skateborder."</p>
+</div>
+<div class="group flex flex-col items-center text-center p-6 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-primary/50 transition-colors">
+<div class="w-24 h-24 rounded-full bg-slate-200 mb-4 overflow-hidden border-2 border-transparent group-hover:border-primary transition-all">
+<img alt="Instructor Mike looking at the ocean" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC07a2vVfgWRkjOB1ztrG2wNmgavXWCkXoDhhqxT6AA6SHC4oF34QPM-7BCtKbF08KGXPnxHHS8vKQjDG4wRCX-GlmJbtb_R3z4orUDViVuZX5JlZRbVBb1xUzmD5_0uComB4ToEJgSlohWdMYHA3qRKgF_-AWvbzPE0Oo1C5FXo8F-rJ7pvIDYymfVJfvmKB7oK3-MFmLLD1eXehuBrkwALKMhc1_shv1-8W7fnFMGgOMk_YvDnFk5wZXMntxU5ymwoc0PsSGia9Q"/>
+</div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">Mike</h3>
+<p class="text-primary text-sm font-semibold mb-2">15 Years Surfing</p>
+<p class="text-slate-500 text-sm italic">"Can hold breath for 4 mins."</p>
+</div>
+<div class="group flex flex-col items-center text-center p-6 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-primary/50 transition-colors">
+<div class="w-24 h-24 rounded-full bg-slate-200 mb-4 overflow-hidden border-2 border-transparent group-hover:border-primary transition-all">
+<img alt="Instructor Jessica laughing" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAZkZUcjqTqG2_54JuKHHehCCVJtkckkejYFSTUOHw2cbGO3RVCYyfYI90hF2UDXbbXmrVetHDObWD68LS9L1R2MKUqucjIIHzBRnTnLiB8eoEc7dgN8fymG2qbjPih_0CW27c2ud-zu0Heg8Hm6g4BTFdJu_ghlDd3u3WrpciNF5oxM62vlxq8RipbA2Wj91mVmgN0SHWli-urv4o7wRL0KgspwRAfL4KqtHk5GARrRy7jDgb2QbxMi7SAEFbeY2tXTPKJN44FBg"/>
+</div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">Jessica</h3>
+<p class="text-primary text-sm font-semibold mb-2">6 Years Surfing</p>
+<p class="text-slate-500 text-sm italic">"Loves sunrise sessions."</p>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-10 w-full" id="faq">
+<div class="flex flex-col items-center text-center">
+<h2 class="text-5xl font-bold font-handwritten text-slate-900 dark:text-white mb-3">Common Questions</h2>
+<p class="text-slate-500 max-w-lg">Everything you need to know before you hit the water.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-sand dark:bg-sand-dark rounded-2xl border border-slate-200 dark:border-slate-700 p-8 flex gap-6 hover:shadow-lg transition-all hover:-translate-y-1">
+<div class="flex-shrink-0">
+<div class="p-4 bg-white dark:bg-slate-800 rounded-2xl shadow-sm text-primary ring-1 ring-slate-100 dark:ring-slate-700">
+<span class="material-symbols-outlined text-3xl">checkroom</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="font-bold text-slate-900 dark:text-white text-lg">Do I need my own wetsuit?</h3>
+<p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                    No, we provide high-quality wetsuits and surfboards for all our lessons. If you have your own gear that you prefer, feel free to bring it along!
+                </p>
+</div>
+</div>
+<div class="bg-sand dark:bg-sand-dark rounded-2xl border border-slate-200 dark:border-slate-700 p-8 flex gap-6 hover:shadow-lg transition-all hover:-translate-y-1">
+<div class="flex-shrink-0">
+<div class="p-4 bg-white dark:bg-slate-800 rounded-2xl shadow-sm text-blue-500 ring-1 ring-slate-100 dark:ring-slate-700">
+<span class="material-symbols-outlined text-3xl">rainy</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="font-bold text-slate-900 dark:text-white text-lg">What if it rains?</h3>
+<p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                    Surfing is a water sport, so we get wet anyway! We run lessons rain or shine, as long as conditions are safe. Rainy days often mean less crowded waves.
+                </p>
+</div>
+</div>
+<div class="bg-sand dark:bg-sand-dark rounded-2xl border border-slate-200 dark:border-slate-700 p-8 flex gap-6 hover:shadow-lg transition-all hover:-translate-y-1">
+<div class="flex-shrink-0">
+<div class="p-4 bg-white dark:bg-slate-800 rounded-2xl shadow-sm text-orange-500 ring-1 ring-slate-100 dark:ring-slate-700">
+<span class="material-symbols-outlined text-3xl">child_care</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="font-bold text-slate-900 dark:text-white text-lg">Is there a minimum age?</h3>
+<p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                    For group lessons, the minimum age is 12. For private lessons, we can accommodate children as young as 6, provided they are comfortable in the water.
+                </p>
+</div>
+</div>
+<div class="bg-sand dark:bg-sand-dark rounded-2xl border border-slate-200 dark:border-slate-700 p-8 flex gap-6 hover:shadow-lg transition-all hover:-translate-y-1">
+<div class="flex-shrink-0">
+<div class="p-4 bg-white dark:bg-slate-800 rounded-2xl shadow-sm text-red-500 ring-1 ring-slate-100 dark:ring-slate-700">
+<span class="material-symbols-outlined text-3xl">event_busy</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="font-bold text-slate-900 dark:text-white text-lg">Cancellation policy?</h3>
+<p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                    We understand plans change. Full refunds are available for cancellations made at least 24 hours before your scheduled session.
+                </p>
+</div>
+</div>
+</div>
+</section>
+<section class="w-full rounded-3xl overflow-hidden shadow-2xl shadow-sand-dark/10 dark:shadow-none border border-slate-100 dark:border-slate-800" id="booking">
+<div class="flex flex-col lg:flex-row min-h-[600px]">
+<div class="lg:w-1/2 relative h-64 lg:h-auto bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDW5up6GjmUTcmxFsKpVqOXECVPHZaT8kiOlu1qsMFdfw7T9YoFj43_Lxw1neqcODPL9CAn2dpgEuDFRA-1pQh3vAhiIrKZPjpHq6PtTLifTJhQOWkzZqza64417ThL7UkYgLUyeO6scrc5SDXZBN40WMu0eDSui4gWhTwrhIbzAB4ngotulYacScVlj7hb4VIQaJXHmdePoShjo0jxqPdd1NYODaAWLK-GajHI8BkUQV6QL8xn4RvvO1qH3RiYChax7kT1OF1tzZY');">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-black/40"></div>
+<div class="absolute bottom-8 left-8 lg:bottom-12 lg:left-12 max-w-sm text-white drop-shadow-lg">
+<h3 class="font-handwritten text-6xl md:text-7xl font-bold -mb-2">Start Your Adventure</h3>
+<p class="text-lg font-medium opacity-90 mt-4">The ocean is calling. Answer it with Driftwood.</p>
+</div>
+</div>
+<div class="lg:w-1/2 bg-sand dark:bg-slate-900 p-8 md:p-12 lg:p-16 flex flex-col justify-center relative">
+<div class="absolute inset-0 pointer-events-none opacity-30 bg-[url('https://www.transparenttextures.com/patterns/cream-paper.png')] mix-blend-multiply dark:mix-blend-overlay"></div>
+<div class="relative z-10 mb-8">
+<h2 class="text-4xl md:text-5xl font-bold font-handwritten text-slate-900 dark:text-white">Secure Your Spot</h2>
+<p class="text-slate-500 text-sm mt-3">Fill out the details below to book your wave.</p>
+</div>
+<form class="relative z-10 flex flex-col gap-6">
+<div class="flex flex-col gap-3">
+<label class="text-xs font-bold uppercase text-slate-400 tracking-wider">Lesson Type</label>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+<label class="cursor-pointer group">
+<input checked="" class="peer sr-only" name="lesson_type" type="radio"/>
+<div class="rounded-xl border border-slate-200 dark:border-slate-700 p-4 text-center peer-checked:border-primary peer-checked:bg-white peer-checked:shadow-md dark:peer-checked:bg-slate-800 transition-all hover:border-primary/50 bg-white/50 dark:bg-slate-800/50">
+<span class="block text-sm font-bold">Group</span>
+<span class="block text-xs text-slate-400 mt-1">$75</span>
+</div>
+</label>
+<label class="cursor-pointer group">
+<input class="peer sr-only" name="lesson_type" type="radio"/>
+<div class="rounded-xl border border-slate-200 dark:border-slate-700 p-4 text-center peer-checked:border-primary peer-checked:bg-white peer-checked:shadow-md dark:peer-checked:bg-slate-800 transition-all hover:border-primary/50 bg-white/50 dark:bg-slate-800/50">
+<span class="block text-sm font-bold">Private</span>
+<span class="block text-xs text-slate-400 mt-1">$120</span>
+</div>
+</label>
+<label class="cursor-pointer group">
+<input class="peer sr-only" name="lesson_type" type="radio"/>
+<div class="rounded-xl border border-slate-200 dark:border-slate-700 p-4 text-center peer-checked:border-primary peer-checked:bg-white peer-checked:shadow-md dark:peer-checked:bg-slate-800 transition-all hover:border-primary/50 bg-white/50 dark:bg-slate-800/50">
+<span class="block text-sm font-bold">Camp</span>
+<span class="block text-xs text-slate-400 mt-1">$550</span>
+</div>
+</label>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<div class="flex flex-col gap-2">
+<label class="text-xs font-bold uppercase text-slate-400 tracking-wider">Date</label>
+<input class="w-full rounded-lg border-slate-200 dark:border-slate-700 dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-primary focus:border-primary text-sm p-3.5 font-medium bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm" type="date"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-xs font-bold uppercase text-slate-400 tracking-wider">Surfers</label>
+<select class="w-full rounded-lg border-slate-200 dark:border-slate-700 dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-primary focus:border-primary text-sm p-3.5 font-medium bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm">
+<option>1 Person</option>
+<option>2 People</option>
+<option>3 People</option>
+<option>4+ Group</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-xs font-bold uppercase text-slate-400 tracking-wider">Contact Info</label>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<input class="w-full rounded-lg border-slate-200 dark:border-slate-700 dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-primary focus:border-primary text-sm p-3.5 placeholder:text-slate-400 bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm" placeholder="Full Name" type="text"/>
+<input class="w-full rounded-lg border-slate-200 dark:border-slate-700 dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-primary focus:border-primary text-sm p-3.5 placeholder:text-slate-400 bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm" placeholder="Email Address" type="email"/>
+</div>
+</div>
+<button class="mt-4 w-full bg-primary hover:bg-blue-600 text-white text-lg font-bold py-4 rounded-xl shadow-lg shadow-primary/30 transition-all hover:-translate-y-1" type="button">
+                    Confirm Booking
+                </button>
+<p class="text-center text-xs text-slate-400">No payment required until confirmation.</p>
+</form>
+</div>
+</div>
+</section>
+</div>
+</main></div>
+<footer class="w-full bg-white dark:bg-background-dark border-t border-slate-200 dark:border-slate-800 mt-10 md:mt-20 py-10">
+<div class="max-w-7xl mx-auto px-4 md:px-10 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-2 text-slate-900 dark:text-white">
+<span class="material-symbols-outlined text-primary">surfing</span>
+<span class="font-bold">Wavecrest</span>
+</div>
+<div class="flex gap-6 text-slate-500 text-sm">
+<a class="hover:text-primary" href="#">Privacy</a>
+<a class="hover:text-primary" href="#">Terms</a>
+<a class="hover:text-primary" href="#">Instagram</a>
+</div>
+<p class="text-slate-400 text-sm">© 2023 Driftwood Surf School</p>
+</div>
+</footer>
+</body></html>

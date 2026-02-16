@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #137fec;
+  --color-background-light: #f6f7f8;
+  --color-background-dark: #101922;
+  --color-sand: #fdfbf7;
+  --color-sand-dark: #1e293b;
+
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-handwritten: "Caveat", cursive;
+
+  --radius: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 9999px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.grain-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuAdJ4PJisDsWTlAjldKiVDQ64a_sG7Iu7zmcb_86yQeWDAEWceZTjQlQu6P2DA8nIJH795iBRgcW-OR3jNkJTC3WAIv5VbCbXfa5GlZCFdBSe3anvqY3B4fzBusk0HDaHbL6Ua-uFBaOjg6jOnocrl9l0hYDttJViECYPdeOYs-UohpYBoXVk0VGV915efOKAdhPnGgJubAn2syXfgG1nzOrH0gLJt9oGdsNHdlyZBHd1VzsafV7tdTeoK7yzT8RDTj5vmeqW_X4uo);
+  opacity: 0.4;
+  z-index: 10;
+}
